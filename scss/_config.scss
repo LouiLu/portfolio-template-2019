@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+// variables
+$website-width: 1280px;
+$font-stack: 'Montserrat', sans-serif;
+$primary-color: #ffbc00;
+$secondary-color: skyblue;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url('../img/showcase.jpg');
+
+// functions
+// set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// mixins
